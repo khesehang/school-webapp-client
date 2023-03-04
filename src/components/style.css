@@ -1,0 +1,47 @@
+
+.logo {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-item {
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.show ,.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .item-show {
+        display: none;
+    }
+    
+    .nav-items {
+       position: absolute;
+       width: 500px;
+       height: 500px;
+       background-color: red;
+       z-index: 999 !important;
+    }
+
+    .nav-item {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    
+    .show,.hide {
+        display: block;
+    }
+}
